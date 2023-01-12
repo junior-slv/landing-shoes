@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.container-app{
+  width: 100vw;
+  height: 100vh;
+  text-decoration: none;
+  background: linear-gradient(335deg,#6d28cd,#7853f6,#f28ff4,#4412fb,#dfdcef);
+  background-size: 300% 300%;
+  animation: gradient-animation 20s ease infinite;
+}
+.content{
+  display: flex;
+  justify-content: space-between;
+}
+.left-c {
+  text-align: center;
+  margin-left: 100px;
+  margin-top: 15px;
+
+
+}
+.left-c p{
+  font-size: 57px;
+  color: #fff;
+  text-shadow: 1px 5px 4px #000000;
+
+}
+#highlight{
+  color: red;
+}
+.right-c{
+  margin-top: 15px;
+  border: 2px solid #fff;
+  margin-right: 15px
+}
+.right-c img{
+
+  width: 650px;
+  height: 507px;
+
+  transition: 4s linear;
+  animation-name: learn;
+  animation-duration: 6s;
+}
+
+@media all and (max-width: 480px) {
+  .content{
+    display: block;
+  }
+  .left-c{
+    margin: 0;
+  }
+  .left-c p{
+    margin-bottom: 0;
+  }
+  .right-c{
+    margin: 15px 0 0 0 ;
+  }
+ }
+ @keyframes learn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+ }
+ @keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

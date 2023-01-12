@@ -1,0 +1,12 @@
+.img-nav {
+    width: 48px;
+    height: 48px;
+}
+
+.right-aligned{
+    justify-content: flex-end;
+}
+.me-auto a{
+    color: #fff;
+    text-decoration: none;
+}
