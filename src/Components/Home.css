@@ -1,64 +1,50 @@
+
 .content{
-    display: flex;
-    justify-content: space-between;
-  }
-  .left-c {
-    text-align: center;
-    margin-left: 100px;
-    margin-top: 15px;
+  display: flex;
+  padding: 2rem 2rem;
+  justify-content: space-between;
+  background: #212529;
+
+}
+
+.left-c{
+  color: #fff;
+  padding-right: 5rem;
+  text-shadow: 2px 2px 4px #000000;
+  border-bottom: 3px solid yellow;
+}
+.left-c h2{
+  font-size: 4rem;
+  padding-right: 2rem;
+  color: yellow;
+  font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+
+
+}
+.left-c p{
+  padding-right: 2rem;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
   
-  
+}
+.right-c img{
+  width: 1458px;
+  height: 350px;
+  border-radius: 5px;
+  animation-name: learn;
+  animation-duration: 2s;
+}
+@media all and (max-width: 480px) {
+  .content{
+    display: block;
   }
-  .left-c p{
-    font-size: 57px;
-    color: #fff;
-    text-shadow: 1px 5px 4px #000000;
-  
-  }
-  #highlight{
-    color: red;
-  }
-  .right-c{
-    margin-top: 15px;
-    border: 2px solid #fff;
-    margin-right: 15px
-  }
-  .right-c img{
-  
-    width: 650px;
-    height: 507px;
-  
-    transition: 4s linear;
-    animation-name: learn;
-    animation-duration: 6s;
-  }
-  
-  @media all and (max-width: 480px) {
-    .content{
-      display: block;
-    }
-    .left-c{
-      margin: 0;
-    }
-    .left-c p{
-      margin-bottom: 0;
-    }
-    .right-c{
-      margin: 15px 0 0 0 ;
-    }
-   }
-   @keyframes learn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-   }
-   @keyframes gradient-animation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+}
+@keyframes learn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+ }

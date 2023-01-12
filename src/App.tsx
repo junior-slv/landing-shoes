@@ -1,9 +1,9 @@
 import './App.css';
 import './index.css'
 import Header from './Components/Header';
-import Home from './Components/Home';
-import brand from './assets/vans.png'
 import img1 from './assets/img1.jpg'
+import Home from './Components/Home';
+
 
 
 
