@@ -1,10 +1,11 @@
 import { useEffect, useState } from 'react';
 import img1 from '../assets/img1.jpg'
-import img2 from '../assets/img2.jpg'
+import img2 from '../assets/img2.webp'
 import img3 from '../assets/img3.jpg'
 import img4 from '../assets/img4.jpg'
 import img5 from '../assets/img5.jpg'
-
+import imgtest from '../assets/imgteste.png'
+import styled from 'styled-components'
 import './Home.css'
 
 var time = 0
@@ -30,7 +31,7 @@ function Home() {
                 setDisplayimg(img3)
             }
             if(time === 6){
-                setDisplayimg(img4)
+                setDisplayimg(imgtest)
             }
             if(time === 8){
                 setDisplayimg(img5)
@@ -45,7 +46,14 @@ function Home() {
 
       }, []);
 
-    
+      const Imagem = styled.img`
+        width: 1458px;
+        height: 350px;
+        border-radius: 5px;
+        animation-name: learn;
+        animation-duration: 2s;
+
+    `;
   
 
     return ( 
@@ -57,7 +65,7 @@ function Home() {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet deleniti corporis voluptates harum veniam, dolores nam ad, culpa optio eum, iusto dolorem neque numquam. Nam obcaecati veniam corporis quas nulla?</p>
         </div>
         <div className="right-c">
-          <img src={displayimg} alt="" />
+          <Imagem src={displayimg}  alt="" />
         </div>
       </div>
 

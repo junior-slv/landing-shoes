@@ -32,17 +32,16 @@
   line-height: 28px;
   
 }
-.right-c img{
-  width: 1458px;
-  height: 350px;
-  border-radius: 5px;
-  animation-name: learn;
-  animation-duration: 2s;
-}
+.right-c{
+  padding-left: 3rem;
+ }
 @media all and (max-width: 480px) {
   .content{
     display: block;
   }
+  .right-c{
+    padding-left: 0rem;
+   }
 }
 @keyframes learn {
   from {opacity: 0;}
