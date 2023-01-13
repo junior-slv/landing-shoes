@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import img1 from '../assets/img1.jpg'
-import img2 from '../assets/img2.webp'
-import img3 from '../assets/img3.jpg'
-import img4 from '../assets/img4.jpg'
-import img5 from '../assets/img5.jpg'
-import imgtest from '../assets/imgteste.png'
+import img2 from '../assets/airmax90.png'
+import img3 from '../assets/allstar.png'
+import img4 from '../assets/vansslip.png'
+import img5 from '../assets/airmax97.png'
+
 import styled from 'styled-components'
 import './Home.css'
 
@@ -25,19 +25,19 @@ function Home() {
                 time = 0
             }
             if(time === 2){
-                setDisplayimg(img2)
+                setDisplayimg(img1)
             }
             if(time === 4){
-                setDisplayimg(img3)
+                setDisplayimg(img2)
             }
             if(time === 6){
-                setDisplayimg(imgtest)
+                setDisplayimg(img3)
             }
             if(time === 8){
-                setDisplayimg(img5)
+                setDisplayimg(img4)
             }
             if(time === 10){
-                setDisplayimg(img1)
+                setDisplayimg(img5)
             }
 
         }, 3000);
