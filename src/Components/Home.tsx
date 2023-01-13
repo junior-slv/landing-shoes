@@ -47,8 +47,8 @@ function Home() {
       }, []);
 
       const Imagem = styled.img`
-        width: 1458px;
-        height: 350px;
+        width: 91.125rem;
+        height: 21.875rem;
         border-radius: 5px;
         animation-name: learn;
         animation-duration: 2s;
